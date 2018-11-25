@@ -1,0 +1,9 @@
+// 换肤
+$redBase: #dc143c;
+$orangeBase: saturate(lighten(adjust_hue($redBase, 39), 5), 7);
+$yellowBase: saturate(lighten(adjust_hue($redBase, 64), 6), 13);
+$greenBase: desaturate(darken(adjust_hue($redBase, 102), 2), 11);
+$blueBase: saturate(darken(adjust_hue($redBase, 201), 1), 1);
+$purpleBase: saturate(darken(adjust_hue($redBase, 296), 2), 1);
+$blackBase: #777;
+$bgc: #fff;

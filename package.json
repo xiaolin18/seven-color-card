@@ -1,0 +1,14 @@
+{
+  "name": "seven-color-card",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass --watch ./scss:./css",
+    "server": "node ./server.js",
+    "start": "yarn build & yarn server"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.15.1"
+  }
+}

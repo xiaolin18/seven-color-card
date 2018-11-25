@@ -1,0 +1,38 @@
+// 定义颜色变暗的mixin
+@mixin swatchesDarken($color) {
+  @for $i from 1 through 10 {
+    $x: $i + 11;
+    li:nth-child(#{$x}) {
+      $n: $i * 5;
+      $bgc: darken($color, $n);
+      background-color: $bgc;
+      &:hover:before {
+        // hover状态显示颜色编号
+        content: "#{$bgc}";
+        color: lighten($bgc, 40);
+        font-family: verdana;
+        font-size: 8px;
+        padding: 2px;
+      }
+    }
+  }
+}
+
+// 定义颜色变亮的mixin
+@mixin swatchesLighten($color) {
+  @for $i from 1 through 10 {
+    $x: 11 - $i;
+    li:nth-child(#{$x}) {
+      $n: $i * 5;
+      $bgc: lighten($color, $n);
+      background-color: $bgc;
+      &:hover:before {
+        content: "#{$bgc}";
+        color: darken($bgc, 40);
+        font-family: verdana;
+        font-size: 8px;
+        padding: 2px;
+      }
+    }
+  }
+}

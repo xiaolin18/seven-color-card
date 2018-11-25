@@ -1,0 +1,61 @@
+@import "./variable.scss";
+@import "./mixin.scss";
+
+// 调用mixin
+.colorbox {
+  .card li {
+    width: 4.7619047619%;
+    float: left;
+    height: 60px;
+    list-style: none outside none;
+  }
+  ul.red {
+    @include swatchesLighten($redBase);
+    @include swatchesDarken($redBase);
+    li:nth-child(11) {
+      background-color: $redBase;
+    }
+  }
+  ul.orange {
+    @include swatchesLighten($orangeBase);
+    @include swatchesDarken($orangeBase);
+    li:nth-child(11) {
+      background-color: $orangeBase;
+    }
+  }
+  ul.yellow {
+    @include swatchesLighten($yellowBase);
+    @include swatchesDarken($yellowBase);
+    li:nth-child(11) {
+      background-color: $yellowBase;
+    }
+  }
+  ul.green {
+    @include swatchesLighten($greenBase);
+    @include swatchesDarken($greenBase);
+    li:nth-child(11) {
+      background-color: $greenBase;
+    }
+  }
+  ul.blue {
+    @include swatchesLighten($blueBase);
+    @include swatchesDarken($blueBase);
+    li:nth-child(11) {
+      background-color: $blueBase;
+    }
+  }
+  ul.purple {
+    @include swatchesLighten($purpleBase);
+    @include swatchesDarken($purpleBase);
+    li:nth-child(11) {
+      background-color: $purpleBase;
+    }
+  }
+  ul.black {
+    @include swatchesLighten($blackBase);
+    @include swatchesDarken($blackBase);
+    li:nth-child(11) {
+      background-color: $blackBase;
+    }
+  }
+}
